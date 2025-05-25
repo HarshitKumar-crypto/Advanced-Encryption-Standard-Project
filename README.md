@@ -15,7 +15,8 @@ Error Recovery: Robust error handling and reporting
 
 ## Table of Contents
 
-* [Project Setup](#project-setup)
+* [Overview](#overview)
+* [Features](#features)
 * [Project Structure](#project-structure)
 * [Database Design](#database-design)
 * [MySQL Table Creation](#mysql-table-creation)
@@ -25,6 +26,22 @@ Error Recovery: Robust error handling and reporting
 * [Responsiveness and Accessibility](#responsiveness-and-accessibility)
 * [Technologies Used](#technologies-used)
 * [Run Instructions](#run-instructions)
+
+##Overview
+
+Axon is a command-line tool that provides strong encryption and decryption capabilities using the Advanced Encryption Standard (AES-128) with Cipher Block Chaining (CBC) mode. It's designed for secure file protection with a focus on performance, security, and ease of use.
+
+
+##Features
+
+AES-128 Encryption: Industry-standard symmetric encryption algorithm
+CBC Mode Implementation: Enhanced security through block chaining
+Secure Password Handling: Strong password validation and key derivation
+High Performance: Optimized C implementation for fast encryption/decryption
+Command Line Interface: Simple, scriptable interface for automation
+Cross-Platform Support: Works on Linux, macOS, and Windows
+File Chunking: Efficiently handles files of any size by processing in chunks
+Error Recovery: Robust error handling and reporting
 
 ---
 
@@ -112,5 +129,4 @@ CREATE TABLE users (
 
 ---
 
-Let me know if you'd like this tailored to the content of your `main.java` and `AESUtil.java` files, or if you'd like a sample DAO/model/UI class added to the README.
 
