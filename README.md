@@ -1,17 +1,7 @@
-#Overview
+## Advanced-Encryption-Standard-Project
+A high-performance, secure file encryption and decryption tool using AES-128.
 
-Axon is a command-line tool that provides strong encryption and decryption capabilities using the Advanced Encryption Standard (AES-128) with Cipher Block Chaining (CBC) mode. It's designed for secure file protection with a focus on performance, security, and ease of use.
-
-#Features
-
-AES-128 Encryption: Industry-standard symmetric encryption algorithm
-CBC Mode Implementation: Enhanced security through block chaining
-Secure Password Handling: Strong password validation and key derivation
-High Performance: Optimized C implementation for fast encryption/decryption
-Command Line Interface: Simple, scriptable interface for automation
-Cross-Platform Support: Works on Linux, macOS, and Windows
-File Chunking: Efficiently handles files of any size by processing in chunks
-Error Recovery: Robust error handling and reporting
+Axon Logo
 
 ## Table of Contents
 
@@ -27,12 +17,12 @@ Error Recovery: Robust error handling and reporting
 * [Technologies Used](#technologies-used)
 * [Run Instructions](#run-instructions)
 
-##Overview
+## Overview
 
 Axon is a command-line tool that provides strong encryption and decryption capabilities using the Advanced Encryption Standard (AES-128) with Cipher Block Chaining (CBC) mode. It's designed for secure file protection with a focus on performance, security, and ease of use.
 
 
-##Features
+## Features
 
 AES-128 Encryption: Industry-standard symmetric encryption algorithm
 CBC Mode Implementation: Enhanced security through block chaining
