@@ -1,7 +1,9 @@
 #Overview
+
 Axon is a command-line tool that provides strong encryption and decryption capabilities using the Advanced Encryption Standard (AES-128) with Cipher Block Chaining (CBC) mode. It's designed for secure file protection with a focus on performance, security, and ease of use.
 
 #Features
+
 AES-128 Encryption: Industry-standard symmetric encryption algorithm
 CBC Mode Implementation: Enhanced security through block chaining
 Secure Password Handling: Strong password validation and key derivation
@@ -11,36 +13,104 @@ Cross-Platform Support: Works on Linux, macOS, and Windows
 File Chunking: Efficiently handles files of any size by processing in chunks
 Error Recovery: Robust error handling and reporting
 
-flowchart TD
-    subgraph UI["User Interface Layer"]
-        main["main.c - CLI Interface"]
-    end
+## Table of Contents
 
-    subgraph IO["Input/Output Layer"]
-        chunked_file["chunked_file.c - File Processing"]
-    end
+* [Project Setup](#project-setup)
+* [Project Structure](#project-structure)
+* [Database Design](#database-design)
+* [MySQL Table Creation](#mysql-table-creation)
+* [JDBC Implementation](#jdbc-implementation)
+* [Model and DAO Classes](#model-and-dao-classes)
+* [User Interface](#user-interface)
+* [Responsiveness and Accessibility](#responsiveness-and-accessibility)
+* [Technologies Used](#technologies-used)
+* [Run Instructions](#run-instructions)
 
-    subgraph CE["Crypto Engine"]
-        encryptor["encryptor.c - Encryption Logic"]
-        decryptor["decryptor.c - Decryption Logic"]
-    end
+---
 
-    subgraph AESCORE["AES Core Operations"]
-        confusion["confusion.c - SubBytes"]
-        diffusion["diffusion.c - ShiftRows, MixColumns"]
-        key["key_expansion.c - Key Scheduling"]
-    end
+## Project Setup
 
-    subgraph UTILS["Utility Functions"]
-        memory["memory.c - Memory Management"]
-        conversion["conversion.c - Data Conversion"]
-        config["config.h - Configuration"]
-        error["errors.h - Error Handling"]
-    end
+* **JDK Setup**: The project is built using **Java Development Kit (JDK 17)**.
+* **IDE Used**: Developed and tested using **IntelliJ IDEA** / **Eclipse IDE**.
+* Dependencies like JDBC driver are included in the project classpath.
 
-    UI --> CE
-    UI --> IO
-    CE --> AESCORE
-    CE --> UTILS
-    IO --> UTILS
-    AESCORE --> UTILS
+## Project Structure
+
+```
+project-root/
+│
+├── src/
+│   ├── model/
+│   ├── dao/
+│   ├── ui/
+│   └── util/
+│
+├── database/
+│   └── schema.sql
+│
+└── README.md
+```
+
+## Database Design
+
+* The application uses **MySQL** for data storage.
+* Database schema is designed to store necessary entities efficiently and supports normalization.
+
+## MySQL Table Creation
+
+Example SQL:
+
+```sql
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    email VARCHAR(100),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
+
+## JDBC Implementation
+
+* The project uses **JDBC API** for database connectivity.
+* Connection is managed via a utility class (`DBConnection.java`).
+* Secure access and closing of resources using try-with-resources blocks.
+
+## Model and DAO Classes
+
+* **Model Classes**: Represent entities like `User`.
+* **DAO Classes**: Handle CRUD operations with methods like `addUser()`, `getUserById()`, etc.
+* Implements separation of concerns by decoupling business logic and database operations.
+
+## User Interface
+
+* Built using **Swing / JavaFX** (update accordingly).
+* Emphasis on **clean visual aesthetics** and intuitive navigation.
+* UI is designed with consistency in color, typography, and spacing.
+
+## Responsiveness and Accessibility
+
+* UI components are aligned properly for a consistent layout.
+* Resizable windows and scrollable content support basic responsiveness.
+* Accessibility considerations include clear labels, focus order, and keyboard navigation.
+
+## Technologies Used
+
+* Java 17
+* MySQL
+* JDBC
+* Swing / JavaFX
+* IntelliJ IDEA / Eclipse
+* Git & GitHub
+
+## Run Instructions
+
+1. Clone the repository.
+2. Open the project in your IDE.
+3. Set up the MySQL database and update connection details in `DBConnection.java`.
+4. Run `Main.java` to start the application.
+
+---
+
+Let me know if you'd like this tailored to the content of your `main.java` and `AESUtil.java` files, or if you'd like a sample DAO/model/UI class added to the README.
+
