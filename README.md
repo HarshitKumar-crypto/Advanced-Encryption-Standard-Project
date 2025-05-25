@@ -1,7 +1,10 @@
 ## Advanced-Encryption-Standard-Project
 A high-performance, secure file encryption and decryption tool using AES-128.
 
-Axon Logo
+<p align="center">
+  <img src="https://imgs.search.brave.com/kcAeeXLI6Acg1KHyaTQvg9da3a4o7pGvM2BWGGttsY0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vb3JnSWVX/TmE5U0owblhFeXJn/WFJ2bndLVVpSV2po/azVzelhHM1JwalEt/Yy9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTkz/ZDNjdS9jR0YxWW05/NExtTnZiUzlvL2RX/Sm1jeTlYYUhrbE1q/QnAvY3lVeU1HVnVZ/M0o1Y0hScC9iMjRs/TWpCdlppVXlNRWhK/L1VFRkJKVEl3WTI5/dGNHeHAvWVc1MEpU/SXdaVzFoYVd4ei9K/VEl3YVcxd2IzSjBZ/VzUwL0pUSXdkRzhs/TWpCd2NtOTAvWldO/MEpUSXdaVkJJU1M1/cS9jR2M.jpeg" alt="AES Logo" width="200"/>
+</p>
+
 
 ## Table of Contents
 
