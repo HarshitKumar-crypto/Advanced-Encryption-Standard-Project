@@ -165,3 +165,8 @@ CREATE TABLE users (
 - Document new features and maintain code quality standards.
 
 ---
+## Team Information
+This project was developed by the SolutionMakers team.
+
+Team Leader: Ujjalkant Kumar
+Members: Harshit Kumar, Prabhat Kumar, Saurab Parihar
